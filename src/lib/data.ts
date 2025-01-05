@@ -421,10 +421,10 @@ export const classesData = [
     supervisor: "Iva Frank",
   },
   {
-    id: 5,
-    name: "5B",
+    id: 6,
+    name: "6B",
     capacity: 20,
-    grade: 5,
+    grade: 6,
     supervisor: "Leila Santos",
   },
   {
