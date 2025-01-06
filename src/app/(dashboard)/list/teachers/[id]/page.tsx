@@ -23,7 +23,7 @@ const SingleTeacherPage = () => {
               />
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              <h1 className="text-xl font-semibold">Elsie Johnston</h1>
+              <h1 className="text-xl font-semibold">Keith Adkins</h1>
               <p className="text-sm text-gray-500">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
