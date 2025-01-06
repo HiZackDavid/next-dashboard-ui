@@ -70,12 +70,11 @@ const ResultListPage = () => {
               <Image src="/edit.png" alt="edit" width={16} height={16} />
             </button>
           </Link>
-          {role === "admin" ||
-            (role === "teacher" && (
-              <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
-                <Image src="/delete.png" alt="delete" width={16} height={16} />
-              </button>
-            ))}
+          {(role === "admin" || role === "teacher") && (
+            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+              <Image src="/delete.png" alt="delete" width={16} height={16} />
+            </button>
+          )}
         </div>
       </td>
     </tr>
