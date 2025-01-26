@@ -151,7 +151,7 @@ async function main() {
       data: {
         title: `Assignment ${i}`,
         startDate: new Date(new Date().setHours(new Date().getHours() + 1)),
-        dueDate: new Date(new Date().setDate(new Date().getDate() + 1)),
+        endDate: new Date(new Date().setDate(new Date().getDate() + 1)),
         lessonId: (i % 30) + 1,
       },
     });

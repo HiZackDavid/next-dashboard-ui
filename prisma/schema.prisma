@@ -23,6 +23,7 @@ model Student {
   img         String?
   bloodType   String
   sex         UserSex
+  birthday    DateTime
   attendances Attendance[]
   results     Result[]
   createdAt   DateTime     @default(now())
@@ -45,6 +46,7 @@ model Teacher {
   img       String?
   bloodType String
   sex       UserSex
+  birthday  DateTime
   createdAt DateTime  @default(now())
   subjects  Subject[]
   lessons   Lesson[]
@@ -78,8 +80,8 @@ model Class {
   students      Student[]
   events        Event[]
   announcements Announcement[]
-  supervisor    Teacher        @relation(fields: [supervisorId], references: [id])
-  supervisorId  String
+  supervisor    Teacher?       @relation(fields: [supervisorId], references: [id])
+  supervisorId  String?
   Grade         Grade          @relation(fields: [gradeId], references: [id])
   gradeId       Int
 }
