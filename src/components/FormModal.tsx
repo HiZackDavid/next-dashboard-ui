@@ -31,7 +31,7 @@ interface Props {
   table: Table;
   type: Type;
   data?: any;
-  id?: number;
+  id?: number | string;
 }
 
 const forms: {
